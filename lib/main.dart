@@ -9,19 +9,18 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Eklavya',
       debugShowCheckedModeBanner: false,
+      title: 'Minor Project',
       theme: ThemeData.light(useMaterial3: true).copyWith(
         scaffoldBackgroundColor: Pallete.whiteColor,
         appBarTheme: const AppBarTheme(
           backgroundColor: Pallete.whiteColor,
         ),
       ),
-      home: const Homepage(),
+      home: const HomePage(),
     );
   }
 }
